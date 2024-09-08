@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business - Buy and Resell Electronics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #00bcd4; /* Cyan color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.5); /* Cyan glow effect */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.8); /* Cyan text glow effect */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e0f7fa; /* Lighter cyan for hover effect */
+        }
+
+        #home {
+            background-color: #00796b; /* Dark cyan color */
+            color: #fff;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 20px; /* Add some padding for smaller screens */
+        }
+
+        #home h2 {
+            font-size: 4rem; /* Larger heading */
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-family: 'Arial Black', sans-serif; /* New font */
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.8); /* Cyan text glow effect */
+        }
+
+        #home p {
+            font-size: 1.5rem; /* Larger paragraph text */
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #00bcd4; /* Cyan color */
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Cyan glow effect */
+        }
+
+        .btn:hover {
+            background-color: #00acc1; /* Darker cyan for hover effect */
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        #how-it-works {
+            background-color: #e0f7fa; /* Light cyan color */
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Cyan text glow effect */
+        }
+
+        #how-it-works ol {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        #how-it-works ol li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        #upload {
+            background-color: #b2ebf2; /* Very light cyan color */
+        }
+
+        #upload-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 188, 212, 0.2); /* Subtle cyan glow effect */
+        }
+
+        #upload-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #upload-form label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+
+        #upload-form input, #upload-form textarea, #upload-form select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        #upload-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00bcd4; /* Cyan color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Cyan glow effect */
+        }
+
+        #upload-form button:hover {
+            background-color: #00acc1; /* Darker cyan for hover effect */
+        }
+
+        footer {
+            background-color: #00bcd4; /* Cyan color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Cyan glow effect */
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            #home h2 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+
+    <header>
+        <!-- Add your logo here -->
+        <img src="file:///C:/Users/user/Pictures/Screenshots/Screenshot%202024-09-07%20214016.png" alt="EcoTrade Logo" style="height: 60px; vertical-align: middle;">
+        <h1>EcoTrade</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#upload">Sell Your Item</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Turn Your Old Electronics Into Cash</h2>
+        <p>We collect, recycle, and resell electronics from all over. Upload your item photos, and we'll handle the rest!</p>
+        <a href="#upload" class="btn">Start Selling</a>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Upload your item's details and photos.</li>
+            <li>We evaluate and provide a price offer.</li>
+            <
